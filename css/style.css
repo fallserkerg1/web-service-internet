@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Orbitron", sans-serif;
     text-decoration: none;
+    scroll-behavior: smooth;
     color: var(--white);
 }
 
@@ -186,6 +188,312 @@ header {
     font-size: 0.8rem;
     color: var(--grey);
 }
+
+/* ---- SERVICE ---- */
+
+.service {
+    background-image: url('../img/background-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 800px;
+    gap: 2rem;
+}
+
+.container-service .container-text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+/* ---- SERVICE - TEXT ---- */
+
+.container-text h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.container-text h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.container-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--grey);
+    padding-bottom: 40px;
+}
+
+.container-text .cta-btn a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 15px 65px;
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.container-text .cta-btn a:hover {
+    border: 1px solid var(--grey);
+    background: transparent;
+    box-shadow: 0 0 50px var(--white);
+}
+
+/* ---- SERVICE - IMG ---- */
+
+.container-img {
+    width: 900px;
+}
+
+.container-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px var(--white);
+}
+
+/* ---- TECNOLOGY ---- */
+
+.tecnology {
+    background-image: url('../img/background-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-tecnology {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 800px;
+    gap: 2rem;
+}
+
+/* ---- SERVICE - TEXT ---- */
+
+.container-tecnology .container-text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+/* ---- TECNOLOGY - IMG ---- */
+
+.container-tecnology .container-img {
+    width: 900px;
+}
+
+.container-tecnology .container-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px var(--white);
+}
+
+/* ---- CONTRIES ---- */
+
+.countries {
+    background-image: url('../img/background-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135vh;
+}
+
+.container-countries {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 1000px;
+    gap: 2rem;
+}
+
+/* ---- CONTRIES TEXT ---- */
+
+.container-countries .container-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+/* ---- CONTRIES IMG ---- */
+
+.container-countries .container-img {
+    width: 1200px;
+}
+
+.container-countries .container-img img {
+    box-shadow: none;
+    background-color: var(--black);
+    width: 100%;
+}
+
+/* ---- CONTRIES ---- */
+
+.price {
+    background: var(--black);
+    height: 100vh;
+}
+
+.container-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem 4rem;
+    height: 1000px;
+    gap: 2rem;
+}
+
+/* --- SIDE ---- */
+
+.pricing {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.pricing .options {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+}
+
+.pricing .options a {
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 20px 120px;
+}
+
+.pricing .options a:hover {
+    background: var(--white);
+    color: var(--dark-blue);
+    box-shadow: 0 0 50px var(--white);
+}
+
+.pricing h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 8px;
+    margin-top: 5rem;
+}
+
+.pricing-table td {
+    padding: 20px;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: transparent;
+}
+
+.pricing-table th {
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2rem 3rem;
+
+    position: relative;
+}
+
+.pricing-table th .box {
+    position: absolute;
+    top: -1rem;
+    right: 2rem;
+    left: 2rem;
+
+    border: 1px solid var(--blue);
+    background: var(--white);
+    padding: 20px 55px;
+    color: #1899e4;
+    box-shadow: 5px 5px 10px var(--black);
+}
+
+.pricing-table th h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 3rem 0 1rem 0;
+}
+
+.pricing-table th h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 3rem;
+}
+
+.pricing-table th p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+
+.pricing-table th p span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.pricing-table th .btn {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 65px;
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+    border-radius: none;
+}
+
+.pricing-table th .btn:hover {
+    border: 1px solid var(--grey);
+    background: transparent;
+    box-shadow: 0 0 50px var(--white);
+}
+
+.pricing-table .promo {
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.pricing-table .promo{
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.pricing-table td {
+    font-size: 1rem;
+    background: transparent;
+}
+
+/* ---- SIDE ---- */
 
 
 

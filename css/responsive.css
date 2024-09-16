@@ -12,6 +12,42 @@
     .toogle_btn {
         display: block;
     }
+
+    .service,
+    .tecnology {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 785px) {
+
+    .service {
+        height: 160vh;
+    }
+
+    .tecnology {
+        height: 140vh;
+    }
+
+    .container-service,
+    .container-tecnology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-service .container-text,
+    .container-tecnology .container-text {
+        padding: 4rem 0;
+        width: 100%;
+    }
+
+    .container-img,
+    .container-tecnology .container-img  {
+        padding: 4rem 0;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -21,5 +57,9 @@
 
     .container-home {
         height: 1200px;
+    }
+
+    .container-tecnology .container-text .cta-btn a {
+        padding: 15px 45px;
     }
 }
