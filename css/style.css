@@ -32,6 +32,7 @@ header {
     padding: 2rem 4rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .menu-header {
@@ -349,8 +350,11 @@ header {
 /* ---- CONTRIES ---- */
 
 .price {
-    background: var(--black);
-    height: 100vh;
+    background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
 }
 
 .container-price {
@@ -359,7 +363,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 6rem 4rem;
-    height: 1000px;
+    height: 1200px;
     gap: 2rem;
 }
 
@@ -382,7 +386,7 @@ header {
 .pricing .options a {
     background: var(--dark-blue);
     color: var(--white);
-    padding: 20px 120px;
+    padding: 20px 150px;
 }
 
 .pricing .options a:hover {
@@ -482,10 +486,8 @@ header {
     font-size: 1.2rem;
 }
 
-.pricing-table .promo{
-    background-color: blue;
-    color: white;
-    font-size: 1.2rem;
+.pricing-table .price-tag {
+    background-color: var(--dark-blue);
 }
 
 .pricing-table td {

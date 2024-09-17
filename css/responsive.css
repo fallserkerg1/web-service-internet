@@ -2,6 +2,15 @@
     .home {
         height: 1400px;
     }
+
+    .price {
+        display: none;
+    }
+
+    .container-countries .container-img {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -14,7 +23,8 @@
     }
 
     .service,
-    .tecnology {
+    .tecnology,
+    .price {
         height: 110vh;
     }
 }
@@ -30,20 +40,30 @@
     }
 
     .container-service,
-    .container-tecnology {
+    .container-tecnology,
+    .container-countries {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .container-service .container-text,
-    .container-tecnology .container-text {
+    .container-tecnology .container-text{
         padding: 4rem 0;
         width: 100%;
     }
 
-    .container-img,
-    .container-tecnology .container-img  {
+    .container-countries .container-text {
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .container-tecnology .container-img {
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    .container-img {
         padding: 4rem 0;
         width: 100%;
     }
