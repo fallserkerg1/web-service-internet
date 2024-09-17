@@ -7,10 +7,30 @@
         display: none;
     }
 
+    .countries {
+        height: 1000px;
+    }
+
     .container-countries .container-img {
         padding: 0;
         width: 100%;
     }
+
+    .about .container-about {
+        padding: 6rem 2rem;
+        width: 100%;
+    }
+
+    .about .container-about .container-cards {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about .container-about .container-cards .card {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -39,16 +59,22 @@
         height: 140vh;
     }
 
+    .about {
+        height: 160vh;
+    }
+
     .container-service,
     .container-tecnology,
-    .container-countries {
+    .container-countries,
+    .container-about {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .container-service .container-text,
-    .container-tecnology .container-text{
+    .container-tecnology .container-text,
+    .container-about .container-text{
         padding: 4rem 0;
         width: 100%;
     }
@@ -81,5 +107,14 @@
 
     .container-tecnology .container-text .cta-btn a {
         padding: 15px 45px;
+    }
+
+    .container-about .container-cards .card {
+        display: flex;
+        height: 100%;
+    }
+
+    .container-about .container-cards .card .header .user img {
+        display: none;
     }
 }

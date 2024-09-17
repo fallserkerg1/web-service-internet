@@ -497,5 +497,235 @@ header {
 
 /* ---- SIDE ---- */
 
+/* ---- ABOUT ---- */
+
+.about {
+    background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 800px;
+    gap: 2rem;
+}
+
+/* ---- ABOUT TEXT ---- */
+
+.container-about .container-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-about .container-text h2 {
+    line-height: 4rem;
+}
+
+.container-about .container-text p {
+    line-height: 2rem;
+}
+
+/* ---- ABOUT CARDS ---- */
+
+.container-about .container-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+.container-about .container-cards .card {
+    height: 260px;
+    width: 500px;
+    padding: 1rem 2rem;
+    background: var(--dark-blue);
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.container-about .container-cards .card:hover {
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 15px var(--grey);
+}
+
+.container-about .container-cards .card .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-about .container-cards .card .header .user {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.container-about .container-cards .card .header .user img {
+    height: 60px;
+    border-radius: 100%;
+}
+
+.container-about .container-cards .card .content{
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+/* ---- CONTACT ---- */
+
+.contact {
+    background-image: url('../img/background-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.contact .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 500px;
+}
+
+/* ---- CONTACT TEXT ---- */
+
+.contact .container-contact .container-text-contact h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ---- CONTACT BTN ---- */
+
+.contact .container-contact .join-btn {
+    text-transform: uppercase;
+    padding: 15px 75px;
+    border: 1px solid var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .container-contact .join-btn:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 50px var(--white);
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* ---- CONTACT EXTRA ---- */
+
+.contact-extra {
+    background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.contact-extra .container-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 400px;
+}
+
+.contact-extra .container-extra h2{
+    font-size: 2.5rem;
+}
+
+.contact-extra .container-extra p {
+    line-height: 2rem;
+}
+
+/* ---- FOOTER ---- */
+
+.footer {
+    background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 66vh;
+}
+
+.footer .container-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    height: 500px;
+}
+
+.footer .container-footer .container-min-about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .container-footer .container-min-about h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer .container-footer .container-min-about p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--grey);
+    cursor: pointer;
+}
+
+/* ---- FOOTER BTN ---- */
+
+.footer .container-footer .container-min-about-btn {
+    display: flex;
+    align-items: center;
+}
+
+.footer .container-footer .container-min-about-btn a {
+    font-size: 1.1rem;
+    border: 1px solid var(--white);
+    padding: 15px 55px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .container-footer .container-min-about-btn a:hover {
+    border: 1px solid transparent;
+    color: var(--white);
+    background: var(--blue);
+    box-shadow: 0 0 25px var(--white);
+}
+
+/* ---- FOOTER LAST-FOOTER ---- */
+
+.footer .last-footer {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 1rem 0;
+}
+
+
+
+
+
 
 
