@@ -3,6 +3,10 @@
         height: 1400px;
     }
 
+    .about {
+        height: 1400px;
+    }
+
     .price {
         display: none;
     }
@@ -38,7 +42,11 @@
         display: none;
     }
 
-    .toogle_btn {
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
         display: block;
     }
 
@@ -60,7 +68,7 @@
     }
 
     .about {
-        height: 160vh;
+        height: 1500px;
     }
 
     .container-service,
@@ -101,6 +109,10 @@
         height: 1900px;
     }
 
+    .about {
+        height: 1500px;
+    }
+
     .container-home {
         height: 1200px;
     }
@@ -116,5 +128,17 @@
 
     .container-about .container-cards .card .header .user img {
         display: none;
+    }
+}
+
+@media (max-width: 493px) {
+    .about {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 423px) {
+    .about {
+        height: 2000px;
     }
 }

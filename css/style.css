@@ -7,6 +7,7 @@
     /* font-family: "Montserrat", sans-serif; */
     font-family: "Orbitron", sans-serif;
     text-decoration: none;
+    list-style: none;
     scroll-behavior: smooth;
     color: var(--white);
 }
@@ -58,7 +59,7 @@ header {
 }
 
 .nav-menu a {
-    padding-top: 10px;
+    padding-top: 8px;
     font-size: 1.1rem;
     font-weight: 600;
     border-bottom: 1px solid transparent;
@@ -70,9 +71,37 @@ header {
     color: var(--blue);
 }
 
-.toogle_btn {
-    font-size: 1.4rem;
+.toggle_btn {
+    padding-top: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
     display: none;
+}
+
+/* ----- drowndown_menu ----- */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 0;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 500px;
+}
+
+.dropdown_menu li {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---- HOME ---- */
@@ -690,6 +719,12 @@ header {
     font-weight: 200;
     color: var(--grey);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .container-footer .container-min-about p:hover {
+    color: var(--white);
+    text-shadow: 0 0 25px var(--white);
 }
 
 /* ---- FOOTER BTN ---- */
