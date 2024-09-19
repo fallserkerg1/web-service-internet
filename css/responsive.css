@@ -55,6 +55,16 @@
     .price {
         height: 110vh;
     }
+
+    .footer {
+        height: 100vh;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 785px) {
@@ -104,6 +114,22 @@
 
 }
 
+@media (max-width: 778px) {
+
+    .footer {
+        height: 140vh;
+    }
+
+}
+
+@media (max-width: 659px) {
+
+    .footer {
+        height: 160vh;
+    }
+
+}
+
 @media (max-width: 640px) {
     .home {
         height: 1900px;
@@ -111,6 +137,11 @@
 
     .about {
         height: 1500px;
+    }
+
+    .container-footer {
+        display: flex;
+        gap: 2rem;
     }
 
     .container-home {
@@ -135,10 +166,33 @@
     .about {
         height: 1800px;
     }
+
+}
+
+@media (max-width: 452px) {
+
+    .footer {
+        height: 220vh;
+    }
+
 }
 
 @media (max-width: 423px) {
+
     .about {
         height: 2000px;
     }
+
+    .footer {
+        height: 260vh;
+    }
+
+}
+
+@media (max-width: 389px) {
+
+    .dropdown_menu {
+        top: 136px;
+    }
+    
 }

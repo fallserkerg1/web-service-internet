@@ -104,6 +104,25 @@ header {
     justify-content: center;
 }
 
+/* ----- button up ----- */
+
+.button-up {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    border-radius: 10px;
+
+    padding: 18px 26px;
+    background: var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-up:hover {
+    box-shadow: 0 0 25px var(--white);
+    transform: scale(1.1);
+}
+
 /* ---- HOME ---- */
 
 .home {
@@ -665,6 +684,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
+    padding: 2rem 4rem;
 }
 
 .contact-extra .container-extra {
@@ -674,7 +694,7 @@ header {
     text-align: center;
     justify-content: center;
     gap: 1rem;
-    height: 400px;
+    height: 500px;
 }
 
 .contact-extra .container-extra h2{
@@ -692,7 +712,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 66vh;
+    height: 70vh;
 }
 
 .footer .container-footer {
@@ -700,13 +720,15 @@ header {
     text-align: center;
     justify-content: space-around;
     padding: 2rem 4rem;
-    height: 500px;
+    margin: 0 auto;
+    height: 400px;
 }
 
 .footer .container-footer .container-min-about {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem 0;
 }
 
 .footer .container-footer .container-min-about h3 {
@@ -746,16 +768,6 @@ header {
     color: var(--white);
     background: var(--blue);
     box-shadow: 0 0 25px var(--white);
-}
-
-/* ---- FOOTER LAST-FOOTER ---- */
-
-.footer .last-footer {
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(20px);
-    padding: 1rem 0;
 }
 
 
