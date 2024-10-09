@@ -1,11 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: "Orbitron", sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -43,10 +42,14 @@ header {
 }
 
 .logo {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.logo span {
+    color: var(--blue);
 }
 
 .logo:hover {
@@ -59,8 +62,8 @@ header {
 }
 
 .nav-menu a {
-    padding-top: 8px;
-    font-size: 1.1rem;
+    padding-top: 12px;
+    font-size: 1.4rem;
     font-weight: 600;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease-in-out;
@@ -72,8 +75,8 @@ header {
 }
 
 .toggle_btn {
-    padding-top: 5px;
-    font-size: 1.3rem;
+    padding-top: 10px;
+    font-size: 1.6rem;
     cursor: pointer;
     display: none;
 }
@@ -83,7 +86,7 @@ header {
 .dropdown_menu {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 112px;
     right: 0;
     height: 0;
     width: 300px;
@@ -94,7 +97,7 @@ header {
 }
 
 .dropdown_menu.open {
-    height: 500px;
+    height: 600px;
 }
 
 .dropdown_menu li {
@@ -104,23 +107,8 @@ header {
     justify-content: center;
 }
 
-/* ----- button up ----- */
-
-.button-up {
-    position: fixed;
-    bottom: 2rem;
-    right: 1.5rem;
-    border-radius: 10px;
-
-    padding: 18px 26px;
-    background: var(--blue);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.button-up:hover {
-    box-shadow: 0 0 25px var(--white);
-    transform: scale(1.1);
+.dropdown_menu li a {
+    font-size: 1.6rem;
 }
 
 /* ---- HOME ---- */
@@ -130,56 +118,56 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150vh;
+    height: auto;
 }
 
 .container-home {
     display: flex;
     align-items: center;
-    padding: 2rem 4rem 0rem 4rem;
-    height: 900px;
+    padding: 16rem 4rem 6rem 4rem;
 }
 
 .container-text {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 900px;
 }
 
 /* ---- HOME - TEXT ---- */
 
-.container-text h3 {
-    font-size: 0.9rem;
+.home .container-text h3 {
+    font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
 
-.container-home h2 {
-    font-size: 2.3rem;
+.home .container-home h2 {
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
 
-.container-home p {
-    font-size: 1rem;
+.home .container-home p {
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 25px;
     color: var(--grey);
     padding-bottom: 40px;
 }
 
-.container-home .cta-btn a {
-    font-size: 1.2rem;
+.home .container-home .cta-btn a {
+    font-size: 1.6rem;
     font-weight: 700;
+    text-transform: uppercase;
     padding: 15px 65px;
     border: 1px solid transparent;
     background-color: var(--blue);
     transition: all 0.3s ease-in-out;
 }
 
-.container-home .cta-btn a:hover {
+.home .container-home .cta-btn a:hover {
     border: 1px solid var(--grey);
     background: transparent;
     box-shadow: 0 0 50px var(--white);
@@ -191,7 +179,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 2rem;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .container-items .item {
@@ -245,15 +234,14 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 
 .container-service {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 4rem;
-    height: 800px;
+    padding: 8rem 4rem;
     gap: 2rem;
 }
 
@@ -265,38 +253,39 @@ header {
 
 /* ---- SERVICE - TEXT ---- */
 
-.container-text h3 {
-    font-size: 0.9rem;
+.service .container-text h3 {
+    font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
 
-.container-text h2 {
-    font-size: 2.3rem;
+.service .container-text h2 {
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
 
-.container-text p {
-    font-size: 1rem;
+.service .container-text p {
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 25px;
     color: var(--grey);
     padding-bottom: 40px;
 }
 
-.container-text .cta-btn a {
-    font-size: 1.2rem;
+.service .container-text .cta-btn a {
+    font-size: 1.6rem;
     font-weight: 700;
+    text-transform: uppercase;
     padding: 15px 65px;
     border: 1px solid transparent;
     background-color: var(--blue);
     transition: all 0.3s ease-in-out;
 }
 
-.container-text .cta-btn a:hover {
+.service .container-text .cta-btn a:hover {
     border: 1px solid var(--grey);
     background: transparent;
     box-shadow: 0 0 50px var(--white);
@@ -304,7 +293,7 @@ header {
 
 /* ---- SERVICE - IMG ---- */
 
-.container-img {
+.service .container-text .container-img {
     width: 900px;
 }
 
@@ -321,7 +310,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 
 .container-tecnology {
@@ -329,8 +318,7 @@ header {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 4rem;
-    height: 800px;
+    padding: 6rem 4rem;
     gap: 2rem;
 }
 
@@ -340,6 +328,44 @@ header {
     display: flex;
     flex-direction: column;
     width: 600px;
+}
+
+.tecnology .container-text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.tecnology .container-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.tecnology .container-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--grey);
+    padding-bottom: 40px;
+}
+
+.tecnology .container-text .cta-btn a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 65px;
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.tecnology .container-text .cta-btn a:hover {
+    border: 1px solid var(--grey);
+    background: transparent;
+    box-shadow: 0 0 50px var(--white);
 }
 
 /* ---- TECNOLOGY - IMG ---- */
@@ -361,7 +387,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 135vh;
+    height: auto;
 }
 
 .container-countries {
@@ -369,8 +395,7 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 4rem;
-    height: 1000px;
+    padding: 4rem;
     gap: 2rem;
 }
 
@@ -381,12 +406,35 @@ header {
     flex-direction: column;
     text-align: center;
     padding-top: 4rem;
+    width: 100%;
+}
+
+.countries .container-text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.countries .container-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.countries .container-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--grey);
+    padding-bottom: 40px;
 }
 
 /* ---- CONTRIES IMG ---- */
 
 .container-countries .container-img {
-    width: 1200px;
+    width: 100%;
 }
 
 .container-countries .container-img img {
@@ -395,7 +443,7 @@ header {
     width: 100%;
 }
 
-/* ---- CONTRIES ---- */
+/* ---- PRICE ---- */
 
 .price {
     background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
@@ -639,7 +687,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: auto;
 }
 
 .contact .container-contact {
@@ -648,8 +696,8 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 4rem;
-    height: 500px;
+    gap: 2rem;
+    padding: 8rem 4rem;
 }
 
 /* ---- CONTACT TEXT ---- */
@@ -676,35 +724,6 @@ header {
     color: var(--white);
 }
 
-/* ---- CONTACT EXTRA ---- */
-
-.contact-extra {
-    background-image: url('../img/formas-geometricas-abstractas-fondo-o-textura.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-    padding: 2rem 4rem;
-}
-
-.contact-extra .container-extra {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 1rem;
-    height: 500px;
-}
-
-.contact-extra .container-extra h2{
-    font-size: 2.5rem;
-}
-
-.contact-extra .container-extra p {
-    line-height: 2rem;
-}
-
 /* ---- FOOTER ---- */
 
 .footer {
@@ -712,23 +731,23 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: auto;
 }
 
 .footer .container-footer {
     display: flex;
-    text-align: center;
-    justify-content: space-around;
-    padding: 2rem 4rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 6rem 4rem;
     margin: 0 auto;
-    height: 400px;
 }
 
 .footer .container-footer .container-min-about {
     display: flex;
     flex-direction: column;
+    width: 200px;
+    padding: 3rem 0;
     gap: 2rem;
-    padding: 2rem 0;
 }
 
 .footer .container-footer .container-min-about h3 {

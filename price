@@ -1,0 +1,131 @@
+        <!-- PRICE-->
+        <section class="price" id="price">
+            <div class="container-price">
+                <!-- SIDE -->
+                <section class="pricing">
+                    <h2>Pricing Options</h2>
+                    <div class="options">
+                        <a href="#">Individuals</a>
+                        <a href="#">Businesses</a>
+                    </div>
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="price-tag">
+                                    <h3>Andromeda</h3>
+                                    <h4>Unlimited Data</h4>
+                                    <p><span>149</span>$ / mounth</p>
+                                    <a href="#" class="btn">Select</a>
+                                </th>
+                                <th class="promo">
+                                    <div class="box">
+                                        Most Popular
+                                    </div>
+                                    <h3>Saturn</h3>
+                                    <h4>Fast Brother</h4>
+                                    <p><span>99</span>$ / mounth</p>
+                                    <a href="#" class="btn">Select</a>
+                                </th>
+                                <th class="price-tag">
+                                    <h3>Moon</h3>
+                                    <h4>Better that Basic</h4>
+                                    <p><span>79</span>$ / mounth</p>
+                                    <a href="#" class="btn">Select</a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Download Speed</td>
+                                <td class="price-tag">300 Mbps</td>
+                                <td class="promo">200 Mbps</td>
+                                <td class="price-tag">150 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Upload Speed</td>
+                                <td class="price-tag">60 Mbps</td>
+                                <td class="promo">40 Mbps</td>
+                                <td class="price-tag">20 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Data Cap</td>
+                                <td class="price-tag">Unlimited</td>
+                                <td class="promo">Unlimited</td>
+                                <td class="price-tag">Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Contract</td>
+                                <td class="price-tag">12 Month</td>
+                                <td class="promo">12 Month</td>
+                                <td class="price-tag">12 Month</td>
+                            </tr>
+                            <tr>
+                                <td>Setup Cost</td>
+                                <td class="price-tag">258$</td>
+                                <td class="promo">258$</td>
+                                <td class="price-tag">258$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- SIDE -->
+            </div>
+        </section>
+
+
+
+
+
+        <section class="about" id="about">
+            <div class="container-about">
+                <div class="container-text">
+                    <h2>Used By Thousands of Happy Customers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel facere quos voluptates saepe aliquid eum sed consectetur.</p>
+                </div>  
+                <div class="container-cards">
+                    <div class="card">
+                        <div class="header">
+                            <div class="user">
+                                <img src="img/profil.jpg" alt="">
+                                <h3>Lorem, ipsum dolor.</h3>
+                            </div>
+                            <div class="stars">
+                                <p>4.5 *</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laudantium tempore doloremque harum magni labore soluta obcaecati recusandae ratione dignissimos!.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <div class="user">
+                                <img src="img/profil.jpg" alt="">
+                                <h3>Lorem, ipsum dolor.</h3>
+                            </div>
+                            <div class="stars">
+                                <p>4.5 *</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laudantium tempore doloremque harum magni labore soluta obcaecati recusandae ratione dignissimos!.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <div class="user">
+                                <img src="img/profil.jpg" alt="">
+                                <h3>Lorem, ipsum dolor.</h3>
+                            </div>
+                            <div class="stars">
+                                <p>4.5 *</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste laudantium tempore doloremque harum magni labore soluta obcaecati recusandae ratione dignissimos!.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
